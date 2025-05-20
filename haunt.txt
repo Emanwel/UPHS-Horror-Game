@@ -1,0 +1,72 @@
+[GUARDHOUSE]
+The lights flicker around you.
+A sudden breeze fills the air.
+The catwalk lights turn off one by one.
+Logbooks start to fall from their places.
+The cameras suddenly disconnect.
+Whispers can be heard from the field.
+The Lady in White looks at you from the window.
+All the names on the logbook turn red.
+The cameras show numerous spirits looking directly at you.
+You are paralyzed by fear, seeing a large branch fall onto you.
+
+[MUSIC ROOM]
+The lights flicker around you.
+You see movement through the window.
+Dark figures walk past the mirrors.
+Clearbooks start to fall from their places.
+The piano plays on its own.
+Chanting can be heard in the room.
+Sheet music flies around you.
+Guitar strings strum dissonant frequencies.
+The mirrors shatter around you.
+Sheet music starts to wrap around you as your blood writes new music.
+
+[FACULTY ROOM]
+The lights flicker around you.
+You see movement through the window.
+The framed photos seem to look at you.
+Textbooks fall from their places.
+Doors open and close on their own.
+Student records start tearing.
+Figures appear on the tables.
+The scent of ash fills the room.
+The air conditioner malfunctions, turning tho room into a massive heater.
+The Burned Man appears as you curl on the ground suffocating.
+
+[CHEMISTRY LAB]
+The lights flicker around you.
+You see movement behind the door.
+Test tubes move and rattle around you.
+Diagrams fall from their places.
+Flasks begin to bubble and mix.
+The reflections on the glass flasks show a familiar figure.
+You hear laughing echoing through the room.
+The mixtures start to turn into blood.
+You start to see more figures that resemble human figures.
+Flasks and tubes shatter around you.
+Shadowy figures hold you down as one takes the shape of your likeness, smiling.
+
+[SENIOR HIGH BUILDING]
+The lights flicker around you.
+You hear wet footsteps outside the room.
+Chairs start moving on their own.
+Brooms fling across the room.
+All the cabinet doors break down.
+The faint sound of chains echo across the building.
+The television suddenly turns on, revealing static.
+You see a ghoulish figure outside the room.
+Chains surround the building.
+You are chained down, trapped inside a small closet.
+
+[CCC]
+Screams echo across the halls.
+Chairs appear randomly around the building.
+Loud horns can be heard inside the chamber.
+Curtains start to tear.
+The entire area starts to warp around you.
+The screams start to grow louder into one voice.
+run
+RUN
+there is no escape
+The entire building collapses on you. Death in the chamber is not a release but the start of worse horrors.
