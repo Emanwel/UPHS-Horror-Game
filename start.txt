@@ -1,1 +1,40 @@
 [START DIALOGUE]
+
+
+
+
+
+
+
+
+
+
+
+
+
+Decide on what you want to do.
+
+STATS - check your wellbeing
+MOVE - move to a location in the map
+INVENTORY - check your inventory
+HOLD - hold an item in your inventory
+USE - use the item held
+TIME - check your watch
+EXPLORE - explore the area
+CATALOGUE - view a catalogue of encountered ghosts
+NOTES - read your notes
+
+[LOCATIONS]
+Senior Highschool Building - A two-storey building constructed last 2017. A large tree stump stands beside the building.
+Chemistry Lab - An old chemistry lab near the old canteen.
+Faculty Room - The highschool faculty room. 
+Music Room - The practice room for the university choir. The door seems broken.
+Guard House - A small guard house. A generator sits under the CCTV monitors.
+
+[SPECIAL]
+CCTV - check the CCTV cameras
+PLAY - play the broken piano
+INSPECT - check the student grades
+INSPECT - check the scattered flasks
+HIDE - hide
+RUN
