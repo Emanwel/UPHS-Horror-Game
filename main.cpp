@@ -97,12 +97,12 @@ class location {
 
         void creep(){
             linger++;
-            player.fear += creepiness - (flash * floor(creepiness/2));
+            player.fear += ceil(creepiness/2) - (flash * floor(creepiness/2));
         }
 
         void haunt(){
             entity->anger++;
-            player.fear += floor(linger/2);
+            player.fear += floor(linger/5);
             player.sanity -= floor(player.fear/10);
             cout << "\n\n";
             Read("haunt.txt", pos * 12 + floor(player.fear/10) + 2, pos * 12 + floor(player.fear/10) + 2);
@@ -175,6 +175,9 @@ location ccc ("Cebu Cultural Center", 5, 10, &forty, "RUN", 0, false, noitem, no
 location locations[]{sb, cl, fr, mr, gh, ccc};
 
 location *current_loc;
+
+item inventory[] = {noitem, fl, noitem, noitem, noitem};
+item &onHand = inventory[0];
 
 void ghost::special() {
     if (anger < 3) return;
@@ -325,8 +328,7 @@ void location::act(){
     Update();
 }
 
-item inventory[] = {noitem, fl, noitem, noitem, noitem};
-item &onHand = inventory[0];
+
 
 void item::usage() {
     // 0 - reduce creepiness
