@@ -21,8 +21,8 @@ HOLD - hold an item in your inventory
 USE - use the item held
 TIME - check your watch
 EXPLORE - explore the area
-CATALOGUE - view a catalogue of encountered ghosts
-NOTES - read your notes
+
+
 
 [LOCATIONS]
 Senior Highschool Building - A two-storey building constructed last 2017. A large tree stump stands beside the building.
@@ -34,7 +34,7 @@ Guard House - A small guard house. A generator sits under the CCTV monitors.
 [SPECIAL]
 CCTV - check the CCTV cameras
 PLAY - play the broken piano
-INSPECT - check the student grades
-INSPECT - check the scattered flasks
+COOL - fan yourself
+MIX - create a compound
 HIDE - hide
 RUN
