@@ -6,33 +6,33 @@ You found a confiscated EMF detector. The log states that the device was confisc
 
 As you skim across the files, you saw a newspaper stained with coffee. It seems to be the the highschool student paper "UP Bamtuli". You scanned the paper and saw a news article that piqued your interest:
 
--------------------------------------------------------------------------------------------
-  _    _ _____    ____          __  __ _______ _    _ _      _____ 
+--------------------------------------------------------------------
  | |  | |  __ \  |  _ \   /\   |  \/  |__   __| |  | | |    |_   _|
  | |  | | |__) | | |_) | /  \  | \  / |  | |  | |  | | |      | |  
  | |  | |  ___/  |  _ < / /\ \ | |\/| |  | |  | |  | | |      | |  
  | |__| | |      | |_) / ____ \| |  | |  | |  | |__| | |____ _| |_ 
   \____/|_|      |____/_/    \_\_|  |_|  |_|   \____/|______|_____|
---------------------------------------------------------------------------------------------
-
+--------------------------------------------------------------------
 Acacia Tree Inexplicably Falls Down
 
-UP HIGH SCHOOL CEBU - large acacia tree falls down
-near the UPHS guard house last Friday at 8pm. 
+UP HIGH SCHOOL CEBU - large acacia tree falls downnear the UPHS guard
+house last Friday at 8pm. 
 
-The tree, which reportedly stood for over 60 years, fell
-unexpectedly during a class reconciliation last week.
-Eye witnesses from the faculty room notice a figure
-wearing a white dress approaching the tree. Upon
-inspection, the UP CMO concluded the cause to be a
-gradual weakening of the trunk due to strong winds
-after Typhoon Odette.
+The tree, which reportedly stood for over 60 years, fell unexpectedly
+during a class reconciliation last week. No one was injured during this
+incident.
+
+Eye witnesses from the faculty room notice a figure wearing a white dress
+approaching the tree. Upon inspection, the UP CMO concluded the cause to
+be a gradual weakening of the trunk due to strong wind safter Typhoon
+Odette. The fallen tree was removed shortly after to make space for a new
+parking area near the guard house.
 
 You found a bike pump. You looked at the poster saying "NO to bomb jokes" and thought about the owner of the pump.
 You found a half empty "Mon Dacchiatto" coffee cup. It still feels cold.
 You found a dog collar with the name "Bambam". You also saw a photo of the dog on the guard's table.
 You read through the logbook. It seems like one student keeps on appearing on every account, but their name is always redacted.
-You found a safe. This may or may not be a red herring.'
+You found a safe. This may or may not be a red herring.
 
 [MUSIC ROOM]
 
@@ -41,16 +41,159 @@ You found a medkit.
 You found a chinese mirror. The center looks like it has been used before but failed. You remember that this item can dispell lesser spirits.
 
 You found a red clearbook labelled "REL-ENG5"  with every single page being blank apart from one. As you open it, it seems to be a personal copy of a handwritten piece of music with a few notes:
-                                      
-___|\________________________________________
-___|/_____________________________(___)______
-__/|____4____________________________________
-_(_/^\__4_________________(   )______________
-__\|/'_________(___)_________________________
-   d    (   )
-   
-My students keep telling me the piano plays on its own every night. They also
-say they see a japanese child on the mirrors. I stayed for the night and actually
-heard the piano play a single tune that kept repeating. I transcribed it here to keep
-me sane. I tried to use that damned mirror but it only made her angry.
+
+                      "WHAT SHE PLAYS"  
+
+         ___|\________________________________________
+        |___|/_____________________________(___)______|
+        |__/|____4____________________________________|
+        |_(_/^\__4_________________(   )______________|
+        |__\|/'_________(___)_________________________|
+            d    (   )
+            
+
+My students keep telling me the piano plays on its own every night.
+They also say they see a japanese child on the mirrors. As a devout
+Catholic, I have never believed on the stories they've told me. That
+was until I heard the faint sound of the piano. Although all its keys
+were faulty, it seemed to play an unearthly melody. There was no one
+there, but I know something was there.
+
+I transcribed the melody quickly on a piece of sheet music I took. This
+melody keeps on repeating and it makes me insane. I already tried those
+Chinese superstitions that are said to dispell spirits but it only seemed
+to anger her even more. The melody somehow soothes her only when she appears.
+
+You found a piece titled "Forty and One". Its author is not written on the sheet music.
+You found clearbooks with some of them looking as old as the school itself.
+You found a bag of certificates. You wonder how much the choir practiced for these performances.
+You found the keyboard used for practices. Its bag is now reduced down to a rag with a zipper attached.
+You found a guitar with 3 strings. The strings are somehow all tuned to C.
+
+[FACULTY ROOM]
+
+You found your bag.
+
+You found a medkit.
+
+You found the clerk's faculty records. However, a portion of it seems to be scorched.
+You read what remained in the records and saw
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+You found a class list for the Batch 2017-2023. Forty students enrolled, however every attendance check seems to have an extra redacted name.
+You found a large black and white painting of what seems to be a distorted face. A rosary is placed on the frame with a note reading "DO NOT TOUCH".
+You found test scores for a chemistry exam. One student scored 88/760 in a 50 item test for some reason.
+You found a confiscated condom inside a sock, which seems weird as condoms aren't prohibited in the highschool.
+You found a set of dried markers. You took a massive sniff, smelling the ink.
+
+[CHEMISTRY LAB]
+
+You found the key for the Senior High building.
+
+You found a vial of water being labelled as "Holy Water". Beside it is the vial named "Cat Urine".
+
+You found a laboratory record from a lab report. It seems like groups of students enter the room together.
+
+----------------------------------------------------------------------------------
+STUDENT NUMBER              EQUIPMENT                TIME IN            TIME OUT
+----------------------------------------------------------------------------------
+  2017-4352                 Microscope               8:02pm              8:47pm
+  2017-4365                 Microscope               8:05pm              8:47pm
+  2017-4369                 Microscope               8:05pm              8:47pm
+  2017-4345                 Microscope               8:08pm              8:47pm
+  2017-4366                 Microscope               8:13pm              8:47pm
+  2O!7-A3G5                 M;croscope               26:92nn             
+----------------------------------------------------------------------------------
+
+Results:
+
+The experiment yielded no conclusive results, as there are multiple external factors
+affecting the observation of the holy water specimen. Moreover, one of the researchers
+is documented to have extreme allergic reactions when in contact with the pyrite set.
+
+Remarks:
+- Unknown interference affecting lenses and equipment; lens seeing double
+- Molarity of compounds double when unobserved
+- Specimen labelled "Gold" misidentified
+
+You found a vial labelled "Tetraphosphorus Pentoxide". Behind it is the balanced equation for P4O10.
+You found a copy of the periodic table. Niobium is suspiciously cut off.
+You found magnesium strips. Bored, you lit one on fire and immediately got flashbanged.
+You found a couple of vials labelled as different mythological items. Upon further inspection, those were stool samples.
+You found two clumps of powder and mixed them together. Congratulations, you just created a war crime.
+
+[SENIOR HIGH]
+
+You found the key for the faculty room.
+
+You found a medkit.
+
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+#
+
+You found 
+You found
+You found
+You found
+You found
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
