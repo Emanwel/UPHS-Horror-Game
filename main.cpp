@@ -69,11 +69,11 @@ void Read(string x, int start, int end) {
 class ghost {
     public:
         string name;
-        int anger;
+        float anger;
         int level;
 
         ghost() = default;
-        ghost (string w, int y, int z) {
+        ghost (string w, float y, int z) {
             name = w;
             anger = y;
             level = z;
@@ -97,12 +97,12 @@ class location {
 
         void creep(){
             linger++;
-            player.fear += ceil(creepiness/2) - (flash * floor(creepiness/2));
+            player.fear += creepiness - (flash * floor(creepiness/2));
         }
 
         void haunt(){
-            entity->anger++;
-            player.fear += floor(linger/5);
+            entity->anger += 0.5;
+            player.fear += floor(entity->anger/5);
             player.sanity -= floor(player.fear/10);
             cout << "\n\n";
             Read("haunt.txt", pos * 12 + floor(player.fear/10) + 2, pos * 12 + floor(player.fear/10) + 2);
@@ -268,7 +268,7 @@ void location::act(){
             Read("art.txt", 21, 28);
             cout << "\nPlay a melody (SPACE SEPARATED CAPITAL LETTERS)\n>> ";
             getline(std::cin, buff);
-            if (buff == "D E A D" && melo.anger > 8) {
+            if (buff == "D E A D" && melo.anger > 3) {
                 melo.anger = 0;
                 cout << "\nYou feel lighter and more calm.\n";
                 player.sanity += 20;
@@ -296,16 +296,19 @@ void location::act(){
             break;
 
         case 3:
-            cout << "\nEnter Elements\n>> ";
             string elements[3];
             int scount = 0;
             bool fe = false;
-            cin >> elements[0] >> elements[1] >> elements[2];
+            for (int i = 0; i < 3; i++) {
+                cout << "Enter element " << i + 1 << ": ";
+                getline(std::cin, elements[i]);
+            }
+
             for (int i = 0; i < 3; i++) {
                 if (elements[i] == "S") scount++;
                 else if (elements[i] == "Fe") fe = true;
             }
-            if (scount == 2 && fe && dupe.anger > 8) {
+            if (scount == 2 && fe && dupe.anger != 0) {
                 dupe.anger = 0;
                 cout << "\nThe elements mix and form a metal that looks like gold. Your vision clears with its luster.\n";
                 player.sanity += 20;
@@ -363,10 +366,8 @@ void item::usage() {
         CheckInv();
         break;
     case 3:
-        if (current_loc->entity->level < 5) {
-            cout << "\nGhost aggression: " << current_loc->entity->anger << "\n";
-            cout << "\nLength of stay: " << current_loc->linger << "\n";
-        }
+        cout << "\nGhost aggression: " << current_loc->entity->anger << "\n";
+        cout << "\nLength of stay: " << current_loc->linger << "\n";
         break;
     case 4:
         player.sanity += 10 + floor(player.fear/2);
@@ -499,7 +500,7 @@ void Move() {
 void Action(string buff) {
     if (buff == "-1") gameOver = true;
     else if (buff == "STATS") Stats();
-    else if (buff == "MOVE") Move();
+    else if (buff == "MOVE" && !disable) Move();
     else if (buff == "INVENTORY") CheckInv();
     else if (buff == "HOLD") Hold();
     else if (buff == "USE") Use();
@@ -513,7 +514,6 @@ void Watch() {
     update_time();
     string meridian;
     if (gametime[0] < 24 && gametime[0] >= 12) meridian = "pm";
-    else if (gametime[0] == 0) meridian = "mn";
     else meridian = "am";
     Read("art.txt", 1, 9);
     if (current_loc->name != "Chemistry Lab") {
