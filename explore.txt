@@ -77,7 +77,7 @@ You found your bag.
 You found a medkit.
 
 You found the clerk's faculty records. However, a portion of it seems to be scorched.
-You read what remained in the records and saw
+You read what remained in the records and saw that the date of the record is 1971, which is 54 years ago
 #
 #
 #
