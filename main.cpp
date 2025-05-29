@@ -4,7 +4,24 @@
 #include <cstdlib>
 #include <iomanip>
 #include <cmath>
+
 using namespace std;
+
+#ifdef OS_Windows
+void clear_screen(void) {
+    HANDLE hOutput = GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD topLeft = {0, 0};
+    DWORD dwCount, dwSize;
+    CONSOLE_SCREEN_BUFFER_INFO csbi;
+    GetConsoleScreenBufferInfo(hOutput, &csbi);
+    dwSize = csbi.dwSize.X * csbi.dwSize.Y;
+    FillConsoleOutputCharacter(hOutput, 0x20, dwSize, topLeft, &dwCount);
+    FillConsoleOutputAttribute(hOutput, 0x07, dwSize, topLeft, &dwCount);
+    SetConsoleCursorPosition(hOutput, topLeft);
+}
+#else
+void clear_screen(void) { cout << ("\x1B[2J"); }
+#endif /* __unix__ */
 
 struct factor {int sanity; int fear;};
 int prob = 40;
@@ -226,6 +243,7 @@ void ghost::special() {
 void location::act(){
     string buff;
     bool noloc = true;
+    int scount;
     switch (pos)
     {
         case 0:
@@ -297,7 +315,7 @@ void location::act(){
 
         case 3:
             string elements[3];
-            int scount = 0;
+            scount = 0;
             bool fe = false;
             for (int i = 0; i < 3; i++) {
                 cout << "Enter element " << i + 1 << ": ";
@@ -393,12 +411,13 @@ void Start() {
     cout << ">> ";
     getline(std::cin, input);
     if (input != "START") Start();
-    
+    clear_screen();
     current_loc = &locations[4];
 }
 
 void Gameloop() {
     string buff;
+   
     cout << "\n\n";
     if (disable) cout << "(CHAINED)\n";
     Read("start.txt", 15, 23);
@@ -406,6 +425,7 @@ void Gameloop() {
     Read("start.txt", current_loc->pos + 35, current_loc->pos + 35);
     cout << "\n\nEnter Action\n>> ";
     getline(std::cin, buff);
+    clear_screen();
     Action(buff);
 }
 
@@ -473,7 +493,7 @@ void Move() {
     Read("start.txt", 28, 32);
     cout << "\nEnter Location\n>> ";
     getline(std::cin, buff);
-
+    clear_screen();
     for (int i = 0; i < 6; i++) {
         if (locations[i].locked && locations[i].name == buff) {
             noloc = false;
@@ -485,6 +505,7 @@ void Move() {
             noloc = false;
             gametime[1] += abs(current_loc->pos - locations[i].pos) * 15;
             current_loc = &locations[i];
+            cout << "You are now in the " << locations[i].name;
             Update();
             break;
         }
@@ -518,11 +539,11 @@ void Watch() {
     Read("art.txt", 1, 9);
     if (current_loc->name != "Chemistry Lab") {
         cout << "          " << gametime[0]%12 + 1 <<  ":" << setfill('0') << setw(2) << gametime[1] << meridian << "\n";
-        cout << "          " << temperature << "*C\n";
+        cout << "       " << temperature << " deg celsius\n";
     }
     else {
         cout << "          " << rand()%12 + 1 <<  ":" << setfill('0') << setw(2) << rand() % 60 << meridian << "\n";
-        cout << "          " << rand()%100 << "*C\n";
+        cout << "       " << rand()%100 << " deg celsius\n";
     }
     Read("art.txt", 11, 19);
 }
