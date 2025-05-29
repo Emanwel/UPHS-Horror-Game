@@ -61,7 +61,7 @@ there, but I know something was there.
 
 I transcribed the melody quickly on a piece of sheet music I took. This
 melody keeps on repeating and it makes me insane. I already tried those
-Chinese superstitions that are said to dispell spirits but it only seemed
+Chinese superstitions that are said to dispel spirits but it only seemed
 to anger her even more. The melody somehow soothes her only when she appears.
 
 You found a piece titled "Forty and One". Its author is not written on the sheet music.
@@ -76,29 +76,29 @@ You found your bag.
 
 You found a medkit.
 
-You found the clerk's faculty records. However, a portion of it seems to be scorched.
-You read what remained in the records and saw that the date of the record is 1971, which is 54 years ago
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+You found the clerk's faculty maintenance records. However, a portion of it seems to be scorched.
+You read what remained in the records and saw that the date of the record is 1966, which was 61 years ago.
+
+           ----------------------------------------
+          / 1966                                  |
+           \ Office                               |
+          /                                       |
+       /       Fakulteh Mayn’tanunz Re'kwest      |
+        /                                         |
+      / may concern,                              |
+      \                                           |
+     /ircons, but the faculty room still feelqls  /
+      /ot. The p/ \pal's office would like to   \
+     \-repasdfls\ /-tehe airgsacosdwnsdadsasdsd  /
+     /-------------------------------------------\
+
+  
+You look around, you notice that there are seven
+big broken air conditioners surrounding the room.
+You also notice that the air is getting hotter
+even if there are no heat sources nearby.
+You open the glass pane window,
+which remains are its frame and glass shards.
 
 You found a class list for the Batch 2017-2023. Forty students enrolled, however every attendance check seems to have an extra redacted name.
 You found a large black and white painting of what seems to be a distorted face. A rosary is placed on the frame with a note reading "DO NOT TOUCH".
