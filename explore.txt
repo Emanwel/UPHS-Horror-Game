@@ -172,11 +172,11 @@ You found a medkit.
 #
 #
 
-You found 
-You found
-You found
-You found
-You found
+You found an old broomstick, damaged and worn to the observable eye.
+You found the TV remote used to control the TV on the floor.
+You found a sticky note with a letter V in it, you wonder what that means.
+You found a box of Christmas series lights, suspiciously twisted into a loop.
+You found unopened air conditioner filters, which is suprisingly dusty.
 
 
 
