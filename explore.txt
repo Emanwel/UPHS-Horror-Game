@@ -148,29 +148,29 @@ You found the key for the faculty room.
 
 You found a medkit.
 
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
-#
+You were going up the stairs to the Grade 12 room. 
+You notice there is something written every 6th step.
+You see H and E, with the letters between it seemingly redacted.
+
+-----------------------------------------------------------
+Quiz #2 - Temperature - Physics 10                         |
+                                                           |
+1. How many Joules does it take for a man (78 kg) to pull  | 
+himself from being chained? Take the chain to be made of   | 
+iron with c = 0.198.                                       | 
+                                                           |
+2. How much would the temperature drop to contract an iron |
+ring from 15.1 inches to 12 inches. (a = 0.8888)           | 
+                                                           |
+3. What are the chances that you have hidden?              |
+                                                           |
+Answer in a 1/4 sheet of paper                             |
+-----------------------------------------------------------
+
+You look at the board infront of you.
+Are these problems related to temperature?
+Why are the problems hyperfixate on iron?
+Is the third question even on Physics?
 
 You found an old broomstick, damaged and worn to the observable eye.
 You found the TV remote used to control the TV on the floor.
