@@ -1,26 +1,26 @@
-Welcome to UP HIGH! Type [START] to start
+ _   _ ____    _   _ ___ ____ _   _ 
+| | | |  _ \  | | | |_ _/ ___| | | |
+| | | | |_) | | |_| || | |  _| |_| |
+| |_| |  __/  |  _  || | |_| |  _  |
+ \___/|_|     |_| |_|___\____|_| |_|
 
+The calm breeze brushes across your hair, as if welcoming you back to the campus.
+You left your bag in the campus. The guards are mysteriously missing, leaving you
+to find the keys to the faculty room to retrieve it. No matter how you condition
+yourself, you feel watched.
 
-
-
-
-
-
-
-
-
-
+Type [START] to play the game.
 
 
 Decide on what you want to do.
 
-STATS - check your wellbeing
 MOVE - move to a location in the map
 INVENTORY - check your inventory
 HOLD - hold an item in your inventory
 USE - use the item held
-TIME - check your watch
 EXPLORE - explore the area
+
+
 
 
 

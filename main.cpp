@@ -185,7 +185,7 @@ item noitem ("none", 0, -1);
 
 location sb ("Senior Highschool Building", 4, 4, &chain, "HIDE", 10, true, fr_key, med);
 location cl ("Chemistry Lab", 3, 3, &dupe, "MIX", 25, true, shs_key, h2o);
-location fr ("Faculty Room", 2, 4, &burnt, "COOL", 5, true, bag, med);
+location fr ("Faculty Room", 2, 2, &burnt, "COOL", 5, true, bag, med);
 location mr ("Music Room", 1, 5, &melo, "PLAY", 15, false, med, bagwa);
 location gh ("Guard House", 0, 1, &lady, "CCTV", 30, false, cl_key, emf);
 location ccc ("Cebu Cultural Center", 5, 10, &forty, "RUN", 0, false, noitem, noitem);
@@ -247,10 +247,11 @@ void location::act(){
     switch (pos)
     {
         case 0:
-            Read("start.txt", 28, 32);
             checkloc:
+                Read("start.txt", 28, 32);
                 cout << "\nEnter Location\n>> ";
                 getline(std::cin, buff);
+                clear_screen();
 
                 for (int i = 0; i < 6; i++) {
                     if (locations[i].name == buff){
@@ -262,6 +263,7 @@ void location::act(){
                         }
                         switch (locations[i].creepiness){
                             case 1: cout << "The room is well lit and accomodating.\n"; break;
+                            case 2: cout << "You can see through the windows of the room. Strange reflections appear within the area.\n";
                             case 3: cout << "The area is dimly lit. Your vision tricks you into seeing shadows.\n"; break;
                             case 4: cout << "The building, although well lit, looks menacing under the moonlight.\n"; break;
                             case 5:
@@ -269,8 +271,9 @@ void location::act(){
                                 player.fear += 3;
                                 break;
                         }
+                        noloc = false;
                     }
-                    noloc = false;
+                    
                 }
 
             if (noloc) {
@@ -286,6 +289,7 @@ void location::act(){
             Read("art.txt", 21, 28);
             cout << "\nPlay a melody (SPACE SEPARATED CAPITAL LETTERS)\n>> ";
             getline(std::cin, buff);
+            clear_screen();
             if (buff == "D E A D" && melo.anger > 3) {
                 melo.anger = 0;
                 cout << "\nYou feel lighter and more calm.\n";
@@ -321,6 +325,7 @@ void location::act(){
                 cout << "Enter element " << i + 1 << ": ";
                 getline(std::cin, elements[i]);
             }
+            clear_screen();
 
             for (int i = 0; i < 3; i++) {
                 if (elements[i] == "S") scount++;
@@ -400,13 +405,14 @@ void item::usage() {
 int main() {
     //starT
     //Read("explore.txt", 44, 50);
-    Read("start.txt", 1, 1);
+    Read("start.txt", 1, 13);
     Start();
     while (!gameOver) Gameloop();
     return 0;
 }
 
 void Start() {
+    srand(NULL);
     string input;
     cout << ">> ";
     getline(std::cin, input);
@@ -418,9 +424,12 @@ void Start() {
 void Gameloop() {
     string buff;
    
+    Stats();
+    Watch();
+
     cout << "\n\n";
     if (disable) cout << "(CHAINED)\n";
-    Read("start.txt", 15, 23);
+    Read("start.txt", 15, 21);
     if (player.fear >= 50) cout << "(BROKEN BY GHOST) ";
     Read("start.txt", current_loc->pos + 35, current_loc->pos + 35);
     cout << "\n\nEnter Action\n>> ";
@@ -520,12 +529,12 @@ void Move() {
 
 void Action(string buff) {
     if (buff == "-1") gameOver = true;
-    else if (buff == "STATS") Stats();
+    //else if (buff == "STATS") Stats();
     else if (buff == "MOVE" && !disable) Move();
     else if (buff == "INVENTORY") CheckInv();
     else if (buff == "HOLD") Hold();
     else if (buff == "USE") Use();
-    else if (buff == "TIME") Watch();
+    //else if (buff == "TIME") Watch();
     else if (buff == "EXPLORE") Explore();
     else if (buff == current_loc->spec && player.fear < 50) current_loc->act();
     else cout << "\nInvalid Input!\n";
@@ -536,16 +545,16 @@ void Watch() {
     string meridian;
     if (gametime[0] < 24 && gametime[0] >= 12) meridian = "pm";
     else meridian = "am";
-    Read("art.txt", 1, 9);
+    //Read("art.txt", 1, 9);
     if (current_loc->name != "Chemistry Lab") {
-        cout << "          " << gametime[0]%12 + 1 <<  ":" << setfill('0') << setw(2) << gametime[1] << meridian << "\n";
-        cout << "       " << temperature << " deg celsius\n";
+        cout << "\n" << gametime[0]%12 + 1 <<  ":" << setfill('0') << setw(2) << gametime[1] << meridian << "\n";
+        cout << temperature << " deg celsius\n";
     }
     else {
-        cout << "          " << rand()%12 + 1 <<  ":" << setfill('0') << setw(2) << rand() % 60 << meridian << "\n";
-        cout << "       " << rand()%100 << " deg celsius\n";
+        cout << "\n" << rand()%12 + 1 <<  ":" << setfill('0') << setw(2) << rand() % 60 << meridian << "\n";
+        cout << rand()%100 << " deg celsius\n";
     }
-    Read("art.txt", 11, 19);
+    //Read("art.txt", 11, 19);
 }
 
 void CheckInv() {
@@ -575,6 +584,10 @@ void Hold() {
 
 void Use() {
     cout << "\n";
+    if (onHand.name == "noitem") {
+        cout << "No item held.\n";
+        return;
+    }
 	onHand.usage();
 	Update();
 }
