@@ -4,6 +4,7 @@
 #include <cstdlib>
 #include <iomanip>
 #include <cmath>
+#include <ctime>
 
 using namespace std;
 
@@ -412,7 +413,7 @@ int main() {
 }
 
 void Start() {
-    srand(NULL);
+    srand(time(NULL));
     string input;
     cout << ">> ";
     getline(std::cin, input);

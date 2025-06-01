@@ -1,4 +1,5 @@
 # UPHS-Horror-Game
+by Facurib, Girasol, Trazona
 
 ## Description
 You were going home, and suddenly you notice that you forgot something,
@@ -9,7 +10,7 @@ get weird as there is something off about your school. This horror game is a
 ### Compiling
 #### Compile in VS Code Terminal
 ```sh
-g++ main.cpp && uphs.exe
+g++ main.cpp -o uphs.exe && uphs.exe
 ```
 
 ### Running
@@ -23,7 +24,6 @@ uphs.exe
 ./uphs
 ```
 
-## Gameplay
+## Input Restrictions
 1. Once you run the game, type START to the terminal (**only all caps**). It is recommended that the terminal is in full screen mode.
-2. You are given with six choices on where to go, given you have access to the location or not.
-3. 
+2. If you enter a location or do an action, please follow the specified spelling of the location or action. (e.g. **MOVE** for MOVE, **Senior Highschool Building** to move to the SHS Building). 
