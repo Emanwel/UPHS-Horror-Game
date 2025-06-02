@@ -515,7 +515,7 @@ void Move() {
             noloc = false;
             gametime[1] += abs(current_loc->pos - locations[i].pos) * 15;
             current_loc = &locations[i];
-            cout << "You are now in the " << locations[i].name;
+            cout << "You are now in the " << locations[i].name << "\n";
             Update();
             break;
         }
