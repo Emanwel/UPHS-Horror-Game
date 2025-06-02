@@ -121,9 +121,9 @@ class location {
         void haunt(){
             entity->anger += 0.5;
             player.fear += floor(entity->anger/5);
-            player.sanity -= floor(player.fear/10);
+            player.sanity -= floor(player.fear/20);
             cout << "\n\n";
-            Read("haunt.txt", pos * 12 + floor(player.fear/10) + 2, pos * 12 + floor(player.fear/10) + 2);
+            Read("haunt.txt", pos * 12 + floor(player.fear/20) + 2, pos * 12 + floor(player.fear/20) + 2);
         }
         
         void act();
@@ -180,7 +180,7 @@ item med("Medkit", 5, 4);
 item emf("EMF Detector", 3, 3);
 item fl("Flashlight", 0, 0);
 item h2o("Holy Water", 5, 1);
-item bag("Sling Bag", 0, -1);
+item bag("Sling Bag", 10, 10);
 
 item noitem ("none", 0, -1);
 
@@ -399,6 +399,13 @@ void item::usage() {
         inventory[0] = noitem;
         CheckInv();
         break;
+    case 10:
+        cout << "Hurriedly, you exited the premises without daring to look back.\n";
+        Stats();
+        cout <<"\nEnter any key to exit game.>> \n";
+        string ends;
+        cin >> ends;
+        gameOver = true;
     }
     
 }
@@ -431,7 +438,7 @@ void Gameloop() {
     cout << "\n\n";
     if (disable) cout << "(CHAINED)\n";
     Read("start.txt", 15, 21);
-    if (player.fear >= 50) cout << "(BROKEN BY GHOST) ";
+    if (player.fear >= 100) cout << "(BROKEN BY GHOST) ";
     Read("start.txt", current_loc->pos + 35, current_loc->pos + 35);
     cout << "\n\nEnter Action\n>> ";
     getline(std::cin, buff);
@@ -444,7 +451,7 @@ void Update() {
     update_time();
     cooldown--;
     current_loc->creep();
-    if (rand() % 100 <= player.fear && cooldown <= 0) current_loc->entity->special();
+    if (rand() % 200 <= player.fear && cooldown <= 0) current_loc->entity->special();
     if (cooldown <= 3) disable = false;
     if (current_loc->linger >= 4) current_loc->haunt();
     if (current_loc->name == "Faculty Room") temperature += 2;
@@ -462,6 +469,17 @@ void Update() {
 
         gameOver = true;
     }
+    if (player.fear >= 200) {
+        Stats();
+        cout << "\nCause of death: " << current_loc->entity->name;
+        cout <<"\nEnter any key to exit game.>> \n";
+
+        string ends;
+        cin >> ends;
+
+        gameOver = true;
+    }
+
     if (gametime[0] >= 6 && gametime[0] <= 12) {
         cout << "The guards came back from the college side and found you. You were expelled from the school.\n";
         Stats();
@@ -491,7 +509,7 @@ void Chase() {
 
 void Stats() {
     //temporary code
-    cout << "sanity: " << player.sanity;
+    cout << "\nsanity: " << player.sanity;
     cout << "\nfear: " << player.fear;
     cout << "\nlocation: " << current_loc->name;
 }
@@ -537,7 +555,7 @@ void Action(string buff) {
     else if (buff == "USE") Use();
     //else if (buff == "TIME") Watch();
     else if (buff == "EXPLORE") Explore();
-    else if (buff == current_loc->spec && player.fear < 50) current_loc->act();
+    else if (buff == current_loc->spec && player.fear < 100) current_loc->act();
     else cout << "\nInvalid Input!\n";
 }
 
@@ -564,6 +582,7 @@ void CheckInv() {
         if (inventory[i].name == "none") cout << "empty slot " << i + 1 << "\n";
         else cout << inventory[i].name << "\n";
     }
+    cout << "\n";
 }
 
 void Hold() {
