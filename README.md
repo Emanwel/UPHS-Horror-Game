@@ -10,7 +10,7 @@ get weird as there is something off about your school. This horror game is a
 ### Compiling
 #### Compile in VS Code Terminal
 ```sh
-g++ main.cpp -o uphs.exe && uphs.exe
+g++ main.cpp -o uphs && uphs.exe
 ```
 
 ### Running
